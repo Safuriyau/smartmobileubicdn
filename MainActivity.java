@@ -163,8 +163,7 @@ public class MainActivity extends AppCompatActivity implements ServiceListFragme
                     Log.d(TAG, "onDnsSdServiceAvailable: " + fragment);
                     if (fragment != null) {
                         Log.d(TAG, "onDnsSdServiceAvailable: fragment not null");
-//                        ServiceListFragment.WiFiDevicesAdapter adapter = ((ServiceListFragment.WiFiDevicesAdapter)
-//                                fragment.getListAdapter());
+
                         WiFiP2pService service = new WiFiP2pService();
                         service.device = srcDevice;
                         //CHECK HERE IF THERE IS AN UPDATED CONTENT, CONCATENATE THE NAME TO THE INSTANCE NAME AND APPLY THE LOGIC HERE.
